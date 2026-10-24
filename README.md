@@ -42,10 +42,4 @@ Airport rows contain code, name, x and y. Flight rows contain departure airport,
 - `Panel*`, `ListaPodatakaPanel`: entry, filtering and list views.
 - `TajmerNekativnosti.java`: inactivity timer (original filename retained).
 
-## Version and review
 
-This package preserves the source from `vs230340oop2proj.zip`. Compilation passed with JDK 25. Model validation and a CSV round trip were checked separately; full GUI behavior was not tested during packaging.
-
-This supplied version implements **CSV**, not JSON persistence. It should not be described as a JSON/CSV implementation unless a different source version is provided. Observer-style notifications are visible in the code; Factory/Strategy claims are not established by this archive.
-
-The code is a complete course application, with remaining polish issues: the Start button has two listeners, some timer callbacks update AWT components outside the event-dispatch thread, and closing the window does not explicitly stop the simulation worker. These findings are documented rather than silently redesigning the submitted application.
